@@ -4,7 +4,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div className="mx-auto w-full">
-      <div className="flex justify-center gap-6 bg-[#0450A4] p-2 text-white">
+      <div className="flex flex-wrap justify-center gap-6 bg-[#0450A4] p-2 text-white flex-col md:flex-row">
         <Link href="/hamro-page">
           <div className="hover:bg-[#0362C7] p-2 rounded">Hamro page</div>
         </Link>
