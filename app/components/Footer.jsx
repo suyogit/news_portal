@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <div className="mx-auto w-full ">
+    <div className="mx-auto w-full">
       <div className="flex justify-center gap-6 bg-[#0450A4] p-12 text-black font-bold flex-col md:flex-row">
         <div>
           <Image

@@ -14,11 +14,11 @@ const Header = () => {
   return (
     <div className="max-w-[1140px] mx-auto flex flex-col justify-center m-4 ">
       <Image
-        src="/logo.png"
-        width={500}
-        height={500}
+        src="/logo.svg"
+        width={100}
+        height={100}
         alt="Picture of the author"
-        className="w-full max-w-[400px] p-6"
+        className="w-full max-w-[100px] p-6"
       />
       <div className="text-xl text-left mt-4 ml-6">
         {/* Display the formatted date */}

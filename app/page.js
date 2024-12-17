@@ -1,8 +1,5 @@
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
 import News from "./components/News";
 import NewsTop from "./components/NewsTop";
-import Footer from "./components/Footer";
 import Trending from "./components/Trending";
 import Sports from "./components/Sports";
 
@@ -13,19 +10,13 @@ export default async function Home() {
   const trendingNews = data.filter((item) => item.tags?.includes("trending"));
   const sportsNews = data.filter((item) => item.tags?.includes("sports"));
 
-
   return (
     <>
-      <div className=" ">
-        <Header />
-        <Navbar />
-        <div className="bg-[#E9E7E8]">
-          <News data={data} />
-          <NewsTop data={data} />
-          <Trending data={trendingNews} />
-          <Sports data={sportsNews}/>
-          <Footer />
-        </div>
+      <div className="bg-[#E9E7E8]">
+        <News data={data} />
+        <NewsTop data={data} />
+        <Trending data={trendingNews} />
+        <Sports data={sportsNews} />
       </div>
     </>
   );
