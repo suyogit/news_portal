@@ -1,5 +1,5 @@
 import React from "react";
-import Category from "../components/Category";
+import Trending from "../components/Trending";
 
 const page = async () => {
   const res = await fetch("http://localhost:3000/api");
@@ -9,7 +9,7 @@ const page = async () => {
   return (
     <div>
       {/* Render the Category component with filtered data */}
-      <Category data={trendingNews} />
+      <Trending data={trendingNews} />
     </div>
   );
 };

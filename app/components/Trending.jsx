@@ -1,4 +1,4 @@
-const Category = ({ data }) => {
+const Trending = ({ data }) => {
   const article = data;
   return (
     <div className="max-w-[1140px] mx-auto p-4 bg-white my-6">
@@ -44,4 +44,4 @@ const Category = ({ data }) => {
   );
 };
 
-export default Category;
+export default Trending;
