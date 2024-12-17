@@ -8,19 +8,20 @@ import Footer from "./components/Footer"
 
 import { useState, useEffect } from "react";
 
-
+// https://newsapi.org/v2/everything?q=tesla&sortBy=publishedAt&apiKey=1ab7b5da78d9442ab0abe5ebdddaebc3&pageSize=100
 export default function Home() {
    const [data, setData] = useState(null);
     const [isLoading, setLoading] = useState(true);
   
     useEffect(() => {
       fetch(
-        "https://newsapi.org/v2/everything?q=tesla&from=2024-11-16&sortBy=publishedAt&apiKey=1ab7b5da78d9442ab0abe5ebdddaebc3&pageSize=13"
+        "http://localhost:3000/api"
       )
         .then((res) => res.json())
         .then((data) => {
           setData(data);
           setLoading(false);
+          console.log(data)
           console.log(data.articles[0].urlToImage);
         });
     }, []);
@@ -36,7 +37,6 @@ export default function Home() {
         <div className="bg-[#E9E7E8]">
         <News data={data}/>
         <NewsTop data={data}/>
-        
         <Footer/>
         </div>
       </div>

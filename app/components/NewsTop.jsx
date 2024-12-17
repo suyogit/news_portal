@@ -2,7 +2,7 @@ import React from "react";
 
 const NewsTop = ({ data }) => {
   // Slice the articles array to start from index 1 (skip the first article)
-  const articles = data.articles.slice(1); // Skipping the first article
+  const articles = data.slice(1); // Skipping the first article
 
   return (
     <div className="max-w-[1140px] mx-auto p-4 bg-white my-6">
