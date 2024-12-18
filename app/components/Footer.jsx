@@ -6,26 +6,29 @@ const Footer = () => {
       <div className="flex justify-center gap-6 bg-[#0450A4] p-12 text-black font-bold flex-col md:flex-row">
         <div>
           <Image
-            src="/logo.png"
-            width={200}
-            height={200}
+            src="/logo.svg"
+            width={100}
+            height={100}
             alt="Picture of the author"
-            className="w-full max-w-[200px] p-6"
+            className="w-full max-w-[100px] p-6"
           />
         </div>
-        <div>
+        <div className="flex flex-col justify-between">
+          <div>chairman</div>
+          <div>Tunaa Technology</div>
+          <div>98000000000</div>
+        </div>
+        <div className="flex flex-col justify-between">
           <div>chairman</div>
           <div>Tunaa Technology</div>
           <div>98000000000</div>
         </div>
         <div>
-          <div>chairman</div>
-          <div>Tunaa Technology</div>
-          <div>98000000000</div>
-        </div>
-        <div>
-          <div>Registration No.</div>
-          <div>98000000000</div>
+          <div className="flex flex-col justify-between">
+            <div> Registration No.</div>
+            <div>98000000000</div>
+            <div>d</div>
+          </div>
         </div>
       </div>
     </div>

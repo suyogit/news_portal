@@ -1,44 +1,26 @@
 import React from "react";
+import Card from "./Card";
 
 const NewsTop = ({ data }) => {
   const articles = data.slice(1, 5); // Skip the first article
 
   return (
-    <div className="max-w-[1140px] mx-auto p-4 bg-white my-6">
+    <div className="max-w-[1140px] mx-auto p-4 bg-white my-6 rounded-xl">
       {/* Title Section */}
-      <h2 className="text-3xl font-bold text-center text-gray-900 mb-6">
-        Latest News
-      </h2>
+      <div className="flex items-start justify-between">
+        <h2 className="text-3xl font-bold text-left text-gray-900 mb-6">
+          Latest News
+        </h2>
+        <button class="bg-[#0450A4] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          View all
+        </button>
+      </div>
 
       {/* Articles Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {articles.map((article, index) => (
-          <a
-            key={index}
-            href={article.url || "#"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 bg-white"
-          >
-            {/* Image */}
-            <div className="h-40 overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src={article.urlToImage || "https://via.placeholder.com/150"}
-                alt={article.title || "News Image"}
-              />
-            </div>
 
-            {/* Content */}
-            <div className="p-4">
-              <h3 className="font-bold text-lg mb-2 text-gray-900 truncate">
-                {article.title || "No title available"}
-              </h3>
-              <p className="text-gray-700 text-sm leading-snug line-clamp-3">
-                {article.description || "Description not available."}
-              </p>
-            </div>
-          </a>
+         <Card article={article} index={index} />
         ))}
       </div>
     </div>
