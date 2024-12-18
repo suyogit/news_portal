@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Card = ({ article, index }) => {
@@ -7,9 +8,9 @@ const Card = ({ article, index }) => {
   };
 
   return (
-    <a
+    <Link
       key={index}
-      href="http://localhost:3000/news"
+      href={`/news/${article.source.id}`}
       target=""
       rel="noopener noreferrer"
       className="block shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 bg-white"
@@ -47,7 +48,7 @@ const Card = ({ article, index }) => {
           {truncateText(article.description || "Description not available.", 60)}
         </p>
       </div>
-    </a>
+    </Link>
   );
 };
 
