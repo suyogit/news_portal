@@ -23,12 +23,12 @@ const Footer = () => {
           <div>Tunaa Technology</div>
           <div>98000000000</div>
         </div>
-        <div>
+        
           <div className="flex flex-col justify-between">
             <div> Registration No.</div>
             <div>98000000000</div>
-            <div>d</div>
-          </div>
+            <div>email@gmail.com</div>
+          
         </div>
       </div>
     </div>

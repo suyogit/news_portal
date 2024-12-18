@@ -9,8 +9,8 @@ const Card = ({ article, index }) => {
   return (
     <a
       key={index}
-      href={article.url || "#"}
-      target="_blank"
+      href="http://localhost:3000/news"
+      target=""
       rel="noopener noreferrer"
       className="block shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 bg-white"
     >

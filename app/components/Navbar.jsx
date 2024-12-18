@@ -58,7 +58,7 @@ const Navbar = () => {
           menuOpen ? "flex" : "hidden"
         } flex-col gap-2 p-4 md:flex md:flex-row md:justify-center md:gap-6 md:p-2`}
       >
-        <Link href="/hamro-page" className="hover:bg-[#0362C7] p-2 rounded">
+        <Link href="/" className="hover:bg-[#0362C7] p-2 rounded">
           Hamro page
         </Link>
         <Link href="/sikshya" className="hover:bg-[#0362C7] p-2 rounded">
