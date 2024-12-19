@@ -2,23 +2,6 @@ export const data = [
   {
     source: {
       id: 1,
-      name: "Www.dn.se",
-    },
-    author: "Jonas Fröberg",
-    title: "n'Jonas: När jag pratade med Elon Musk på telefon",
-    description:
-      "Pressavdelningen hade förbjudit frågan, men den där dagen för åtta år sen tog n'Jonas ändå mod till sig när han satt med Elon Musk i luren.",
-    url: "https://www.dn.se/kultur/n-jonas-nar-jag-pratade-med-elon-musk-pa-telefon/",
-    urlToImage:
-      "https://static.bonniernews.se/gcs/bilder/dn-mly/2796455f-796f-41ab-b73f-781d80d5f1f3.jpeg?io=1&width=1024&crop=16:9,smart",
-    publishedAt: "2024-12-16T06:13:30Z",
-    content:
-      "Det skrapade över telefonlinjen. Elon Musk väntade på min fråga. Mina knogar vitnade runt mobilen. Framför mig på skrivbordsskivan låg en gul post-it-lapp med två frågor. Det var den 8 november 2016 … [+1960 chars]",
-    tags: ["electronics", "business"],
-  },
-  {
-    source: {
-      id: 2,
       name: "Insurance Journal",
     },
     author: "Admin",
@@ -33,6 +16,24 @@ export const data = [
       "The message from Nasdaq as the Black Lives Matter movement exploded across the US: push for diversity or prepare to explain.\r\nFour years later, a federal appeals court has struck down an attempt by N… [+6555 chars]",
     tags: ["sports", "business"],
   },
+  {
+    source: {
+      id: 2,
+      name: "Www.dn.se",
+    },
+    author: "Jonas Fröberg",
+    title: "n'Jonas: När jag pratade med Elon Musk på telefon",
+    description:
+      "Pressavdelningen hade förbjudit frågan, men den där dagen för åtta år sen tog n'Jonas ändå mod till sig när han satt med Elon Musk i luren.",
+    url: "https://www.dn.se/kultur/n-jonas-nar-jag-pratade-med-elon-musk-pa-telefon/",
+    urlToImage:
+      "https://static.bonniernews.se/gcs/bilder/dn-mly/2796455f-796f-41ab-b73f-781d80d5f1f3.jpeg?io=1&width=1024&crop=16:9,smart",
+    publishedAt: "2024-12-16T06:13:30Z",
+    content:
+      "Det skrapade över telefonlinjen. Elon Musk väntade på min fråga. Mina knogar vitnade runt mobilen. Framför mig på skrivbordsskivan låg en gul post-it-lapp med två frågor. Det var den 8 november 2016 … [+1960 chars]",
+    tags: ["electronics", "business"],
+  },
+
   {
     source: {
       id: 3,
